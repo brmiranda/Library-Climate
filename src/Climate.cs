@@ -376,7 +376,9 @@ namespace Landis.Library.Climate
                         sil.ppt = TimestepData[ecoregion.Index][timestep].AvgPpt;
                         sil.std_ppt = TimestepData[ecoregion.Index][timestep].StdDevPpt;
                         sil.ndeposition = TimestepData[ecoregion.Index][timestep].AvgNDeposition;
-                        //sil.co2 = TimestepData[ecoregion.Index][timestep].AvgCO2;
+                        sil.co2 = TimestepData[ecoregion.Index][timestep].AvgCO2;
+                        sil.par = TimestepData[ecoregion.Index][timestep].AvgPAR;
+                        sil.ozone = TimestepData[ecoregion.Index][timestep].AvgOzone;
                         if (Climate.ConfigParameters.UsingFireClimate)
                         {
                             sil.FWI = TimestepData[ecoregion.Index][timestep].AvgFWI;
@@ -424,7 +426,9 @@ namespace Landis.Library.Climate
                         fil.winddirection = TimestepData[ecoregion.Index][timestep].AvgWindDirection;
                         fil.windspeed = TimestepData[ecoregion.Index][timestep].AvgWindSpeed;
                         fil.ndeposition = TimestepData[ecoregion.Index][timestep].AvgNDeposition;
-                        //fil.co2 = TimestepData[ecoregion.Index][timestep].AvgCO2;
+                        fil.co2 = TimestepData[ecoregion.Index][timestep].AvgCO2;
+                        fil.par = TimestepData[ecoregion.Index][timestep].AvgPAR;
+                        fil.ozone = TimestepData[ecoregion.Index][timestep].AvgOzone;
                         if (Climate.ConfigParameters.UsingFireClimate)
                             fil.FWI = TimestepData[ecoregion.Index][timestep].AvgFWI;
 
